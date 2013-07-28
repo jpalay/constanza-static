@@ -1,3 +1,4 @@
 template.py
 .DS_Store
+.sass-cache
 *.swp
