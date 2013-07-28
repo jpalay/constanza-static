@@ -1,0 +1,59 @@
+@import "variables";
+@import "slides";
+
+#content {
+    padding-top: 0px;
+}
+
+#mission {
+    width: 70%;
+    margin: 0 auto 50px auto;
+    text-align: center;        
+
+    h2 {
+        @include shadowline;
+        display: inline-block;
+        font-family: $caps-font, sans-serif; 
+        font-size: 50px;
+        padding: 0 120px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 21px;
+    }
+}
+
+#numbers {
+    h3 {
+        font-size: 30px;
+    }
+}
+
+#help {
+    h3 {
+        font-size: 30px;
+    }
+    .help-method {
+        @include border-box;
+        width: 33.33%;
+        float: left;
+        padding: 0 20px;
+        text-align: center;
+
+        > a {
+            display: block;
+            width: 75%;
+            margin: 0 auto;
+            img {
+                width: 100%
+            }
+        }
+
+        h4 {
+            margin: 0;
+            font-size: 21px;
+            margin-top: 10px;
+        }
+    }
+}

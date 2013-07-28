@@ -1,0 +1,84 @@
+#slide-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 467px;
+  box-shadow: 0 3px 3px #DDD; }
+
+#slides {
+  position: absolute;
+  right: 180px;
+  width: 100%;
+  height: inherit; }
+  #slides .slide-item {
+    background-position: top right;
+    height: inherit;
+    display: none;
+    position: absolute;
+    right: 0;
+    left: 0;
+    width: 100%; }
+    #slides .slide-item.active {
+      display: block; }
+    #slides .slide-item.person1, #slides .slide-item.person3 {
+      background-image: url(../images/people/1.jpg); }
+    #slides .slide-item.person2, #slides .slide-item.person4 {
+      background-image: url(../images/people/2.jpg); }
+    #slides .slide-item .info {
+      float: right;
+      width: 470px;
+      margin: 72px 0 0;
+      padding-right: 30px;
+      color: #e6e7e7; }
+      #slides .slide-item .info h3 {
+        font-family: BenchNine, sans-serif;
+        text-transform: uppercase;
+        color: inherit;
+        font-size: 50px;
+        margin: 0;
+        text-align: right; }
+      #slides .slide-item .info p {
+        font-size: 24px;
+        margin: 10px 0;
+        text-align: right; }
+      #slides .slide-item .info .buttons {
+        margin: 34px 24px 0 0;
+        float: right; }
+        #slides .slide-item .info .buttons .button:first-child {
+          margin: 0 50px 0 35px; }
+
+#slide-thumbs {
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  background-color: #f6f7f7; }
+  #slide-thumbs .slide-thumbs-inner {
+    margin: 10px auto; }
+    #slide-thumbs .slide-thumbs-inner .slidethumb {
+      padding: 0 10px 10px; }
+      #slide-thumbs .slide-thumbs-inner .slidethumb:last-child {
+        padding-bottom: 0; }
+      #slide-thumbs .slide-thumbs-inner .slidethumb .slidethumb-inner {
+        margin: 0 auto; }
+        #slide-thumbs .slide-thumbs-inner .slidethumb .slidethumb-inner a {
+          border: 2px solid #e6e7e7;
+          display: inline-block;
+          padding: 3px;
+          width: 150px;
+          height: 94px;
+          border-radius: 5px; }
+          #slide-thumbs .slide-thumbs-inner .slidethumb .slidethumb-inner a:hover, #slide-thumbs .slide-thumbs-inner .slidethumb .slidethumb-inner a.active {
+            background-color: #30aed9; }
+          #slide-thumbs .slide-thumbs-inner .slidethumb .slidethumb-inner a img {
+            width: 100%;
+            border-radius: inherit; }
+
+h2 {
+  width: 235px;
+  margin: 0 auto;
+  font-size: 40px;
+  box-shadow: 0 5px 3px -2px #DDD; }
+
+p {
+  margin: 15px 45px;
+  font-size: 18px;
+  line-height: 1.2em; }

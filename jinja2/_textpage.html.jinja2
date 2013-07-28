@@ -1,0 +1,11 @@
+{% extends "jinja2/_base.html.jinja2" %}
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="css/textpage.css">
+{% endblock %}
+{% block content %}
+    <div id="content">
+        <h2>{% block section_title %}{% endblock %}</h2>
+        {% block text %}{% endblock %}
+    </div>
+{% endblock %}

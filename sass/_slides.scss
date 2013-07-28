@@ -1,0 +1,128 @@
+@import "variables";
+$info-width: 350px;
+
+#slide-wrapper {
+    position: relative;
+    box-shadow: 0 3px 3px #DDD;
+}
+
+#slides {
+    position: relative;
+    height: 372px;
+    box-shadow: 0px 5px 3px -3px #DDD;
+
+    .slide-item {
+        background-position: top right;
+        height: inherit;
+        display: none;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        height: inherit;
+
+        &.active {
+            display: block;
+        }
+
+        .slide-img {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: $info-width;
+            background-size: cover;
+            background-position: center center;
+        }
+
+        .slide-img.person1, .slide-img.person3 {
+            background-image: url(../images/people/1.jpg);
+        }
+
+        .slide-img.person2, .slide-img.person4 {
+            background-image: url(../images/people/2.jpg);
+        }
+
+        .info {
+            @include border-box;
+            float: right;
+            width: $info-width;
+            padding: 20px 25px 0;
+            background-color: #EEE;
+            height: inherit;
+            
+            h3 {
+                font-family: $caps-font, sans-serif;
+                text-transform: uppercase;
+                color: inherit;
+                font-size: 50px;
+                margin: 0;
+                text-align: right;
+            }
+
+            p {
+                font-size: 24px;
+                margin: 10px 0;
+                text-align: right;
+            }
+
+            .buttons {
+                @include border-box;
+                margin-top: 35px;
+                padding-left: 35px;
+                
+
+                .button {
+                    &:first-child {
+                        float: left
+                    }
+
+                    &:nth-child(2) {
+                        float: right; 
+                    }
+                }
+            }
+        }
+    }
+}
+
+#slide-thumbs {
+    background-color: $nearly-white;
+
+    .slide-thumbs-inner {
+        margin: 10px auto;
+
+        .slidethumb {
+            @include border-box;
+            padding: 10px 35px 6px;
+            width: 25%;
+            float: left;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+
+            .slidethumb-inner {
+                margin: 0 auto;
+
+                a {
+                    border: 2px solid $off-white;
+                    display: inline-block;
+                    padding: 3px;
+                    border-radius: 5px;
+
+                    &:hover, &.active {
+                        background-color: $btn-inset;
+                    }
+                
+                    img {
+                        display: block;
+                        width: 100%;
+                        border-radius: inherit;
+                    }
+                }
+            }
+        }
+    }
+
+}

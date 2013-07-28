@@ -1,0 +1,163 @@
+@font-face {
+  font-family: Lato;
+  src: url(fonts/lato/Lato-Regular.ttf); }
+
+@font-face {
+  font-family: Lato;
+  src: url(fonts/lato/Lato-Bold.ttf);
+  font-weight: bold; }
+
+@font-face {
+  font-family: BenchNine;
+  src: url(fonts/benchnine/BenchNine-Regular.ttf); }
+
+@font-face {
+  font-family: BenchNine;
+  src: url(fonts/benchnine/BenchNine-Bold.ttf);
+  font-weight: bold; }
+
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  color: #333; }
+
+p {
+  font-family: Georgia, sans-serif; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: BenchNine, sans-serif;
+  text-transform: uppercase;
+  text-align: center; }
+
+hr {
+  height: 1px;
+  margin: 0px;
+  border: none;
+  background-color: #DDD;
+  box-shadow: 0 1px 3px #DDD; }
+
+#content {
+  box-shadow: 3px 0 3px -2px #DDD, -3px 0 3px -2px #DDD;
+  max-width: 1200px;
+  min-width: 960px;
+  margin: 0 auto;
+  padding: 25px 0 25px 0;
+  font-family: Georgia, serif; }
+
+a.button {
+  display: inline-block;
+  color: #e6e7e7;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #1b92ba;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px #267691, inset 0px 0px 3px #30aed9; }
+  a.button:hover {
+    background-color: #30aed9; }
+  a.button.alt {
+    background-color: #9eaf6c;
+    box-shadow: 1px 1px 3px #88965c, inset 0px 0px 3px #b8c493; }
+    a.button.alt:hover {
+      background-color: #b8c493; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/**
+ * For IE 6/7 only
+ */
+.clearfix {
+  *zoom: 1; }
+
+#main-nav {
+  box-shadow: 3px 0 3px -2px #DDD, -3px 0 3px -2px #DDD;
+  background-color: #42453d;
+  min-width: 960px;
+  max-width: 1200px;
+  margin: 0 auto; }
+  #main-nav #nav-inner {
+    width: 960px;
+    margin: 0 auto; }
+  #main-nav .brand {
+    color: #e6e7e7;
+    float: left;
+    font-size: 22px;
+    margin: 10px 0 0 13px; }
+    #main-nav .brand .brand-highlight {
+      color: #30aed9; }
+  #main-nav ul {
+    padding-left: 0;
+    list-style: none;
+    margin: 0 auto;
+    float: left; }
+    #main-nav ul li {
+      float: left;
+      color: #e6e7e7;
+      position: relative;
+      font-family: BenchNine;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 21px; }
+      #main-nav ul li a {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        display: inline-block;
+        width: 100%;
+        padding: 10px 15px;
+        margin: 0 15px;
+        text-align: center;
+        color: inherit; }
+      #main-nav ul li ul {
+        float: none;
+        position: absolute;
+        left: -9999px;
+        width: 100%;
+        z-index: 99;
+        box-shadow: 1px 1px 2px #63665e; }
+        #main-nav ul li ul li {
+          width: 100%;
+          float: none;
+          font-size: 18px; }
+          #main-nav ul li ul li a {
+            padding: 15px;
+            margin: 0;
+            text-align: left; }
+      #main-nav ul li:hover {
+        background-color: #42453d;
+        color: #FEFEFE; }
+        #main-nav ul li:hover > a {
+          text-shadow: 1px 1px 1px #42453d; }
+        #main-nav ul li:hover ul {
+          left: 15px;
+          background-color: #42453d; }
+  #main-nav .button {
+    padding: 5px 10px;
+    margin-top: 7px; }
+
+.footer {
+  box-shadow: 3px 0 3px -2px #DDD, -3px 0 3px -2px #DDD;
+  background-color: #42453d;
+  color: #e6e7e7;
+  min-width: 960px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: -16px; }
+  .footer .address, .footer .contact {
+    float: left;
+    margin: 20px 10px 10px; }
+    .footer .address p, .footer .contact p {
+      margin: 0; }
+  .footer .contact {
+    float: right; }

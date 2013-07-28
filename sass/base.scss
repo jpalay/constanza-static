@@ -1,0 +1,122 @@
+@import "variables";
+@import "genstyles";
+
+#main-nav {
+    @include side-shadows();
+
+    // min-width: $page-width;
+    background-color: $dark-grey;
+    min-width: $min-page-width;
+    max-width: $max-page-width;
+    margin: 0 auto;
+
+    #nav-inner {
+        width: $min-page-width;
+        margin: 0 auto;
+    }
+
+    .brand {
+        color: $off-white;
+        float: left;
+        font-size: 22px;
+        margin: 10px 0 0 13px;
+        
+        .brand-highlight {
+            color: $btn-inset;
+        }
+    }
+
+    ul {
+        padding-left: 0;
+        list-style: none;
+        margin: 0 auto;
+        float: left;
+    
+        li {
+            float: left;
+            color: $off-white; 
+            position: relative;
+            font-family: $caps-font;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 21px;
+                a {
+                    @include border_box;
+                    display: inline-block;
+                    width: 100%;
+                    padding: 10px 15px;
+                    margin: 0 15px;
+                    text-align: center;
+                    color: inherit;
+                }
+                
+                ul {
+                    float: none;
+                    position: absolute;
+                    left: -9999px;
+                    width: 100%;
+                    z-index: 99;
+                    box-shadow: 1px 1px 2px $light-grey;
+
+                    li {
+                        width: 100%;
+                        float: none;
+                        font-size: 18px;
+                        
+                        a {
+                            padding: 15px;
+                            margin: 0;
+                            text-align: left;
+                        }
+                    }
+                }
+                
+                &:hover {
+                    background-color: $dark-grey;
+                    color: #FEFEFE;
+
+                    > a {
+                    text-shadow: 1px 1px 1px $dark-grey;
+                }
+
+                ul {
+                    left: 15px;
+                    background-color: $dark-grey;
+                }
+            }
+        }
+    }
+
+    .button {
+        padding: 5px 10px;
+        margin-top: 7px;
+    }
+}       
+
+.footer {
+    @include side-shadows();
+    background-color: $dark-grey;
+    color: $off-white;
+
+    // .footer-inner {
+        // width: $min-page-width;
+        min-width: $min-page-width;
+        max-width: $max-page-width;
+        margin: 0 auto;
+        margin-top: -16px;
+        
+        .address {
+            float: left;
+            margin: 20px 10px 10px;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .contact {
+            @extend .address;
+            float: right;
+        }
+    // }
+}

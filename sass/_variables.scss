@@ -1,0 +1,27 @@
+$dark-grey: #42453D;
+$light-grey: #63665E;
+$off-white: #E6E7E7;
+$nearly-white: #F6F7F7;
+$min-page-width: 960px;
+$max-page-width: 1200px;
+$btn-color: #1B92BA;
+$btn-shadow: #267691;
+$btn-inset: #30AED9;
+$alt-btn-color: #9EAF6C;
+$alt-btn-shadow: #88965C;
+$alt-btn-inset: #B8C493;
+
+$caps-font: BenchNine;
+
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@mixin side-shadows() {
+    box-shadow: 3px 0 3px -2px #DDD, -3px 0 3px -2px #DDD;
+}
+@mixin shadowline() {
+    box-shadow: 0 5px 3px -2px #DDD;
+}

@@ -1,0 +1,106 @@
+@import "variables";
+// LATO
+@font-face {
+    font-family: Lato;
+    src: url(fonts/lato/Lato-Regular.ttf);
+}
+
+@font-face {
+    font-family: Lato;
+    src: url(fonts/lato/Lato-Bold.ttf);
+    font-weight: bold;
+}
+
+// BENCHNINE
+@font-face {
+    font-family: BenchNine;
+    src: url(fonts/benchnine/BenchNine-Regular.ttf);
+}
+
+@font-face {
+    font-family: BenchNine;
+    src: url(fonts/benchnine/BenchNine-Bold.ttf);
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #333;
+}
+
+p {
+    font-family: Georgia, sans-serif;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    font-family: $caps-font, sans-serif;
+    text-transform: uppercase; 
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    margin: 0px;
+    border: none;
+    background-color: #DDD;
+    box-shadow: 0 1px 3px #DDD;
+}
+
+#content {
+    @include side-shadows();
+    max-width: $max-page-width;
+    min-width: $min-page-width;
+    margin: 0 auto; 
+    padding: 25px 0 25px 0;
+    font-family: Georgia, serif;
+}
+
+a.button {
+    display: inline-block;
+    color: $off-white;
+    text-decoration: none;
+    font-size: 18px;
+    background-color: $btn-color; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px $btn-shadow, inset 0px 0px 3px $btn-inset;
+
+    &:hover {
+        background-color: $btn-inset;
+    }
+
+    &.alt {
+        background-color: $alt-btn-color;
+        box-shadow: 1px 1px 3px $alt-btn-shadow, inset 0px 0px 3px $alt-btn-inset;
+
+        &:hover {
+            background-color: $alt-btn-inset;
+        }
+    }
+}
+
+// Nicolas Gallagher's Clearfix
+// nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+    content: " "; 
+    display: table; 
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ */
+.clearfix {
+    *zoom: 1;
+}
