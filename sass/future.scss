@@ -1,0 +1,20 @@
+@import "variables";
+
+.title {
+    @include photo_header("future.jpg");
+    background-position-y: 30%;
+}
+
+#content {
+    font-size: 18px;
+    line-height: 1.2em;
+    padding-top: 0;
+
+    ul {
+        margin-left: 50px;
+    }
+}
+
+ol {
+    @include bold_list();
+}

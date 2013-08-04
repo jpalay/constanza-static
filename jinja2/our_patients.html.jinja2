@@ -1,0 +1,42 @@
+{% extends "jinja2/_base.html.jinja2" %}
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="css/patients.css">
+{% endblock %}
+{% block content %}
+    <div id="content">
+        {% set title="Our Patients" %}
+        {% include "jinja2/_cover_title.html.jinja2" %}
+        <p>Over 50,000 people live in Constanza and its surrounding towns. The foundation of the local economy is agriculture; a large percentage of the population earns their living by picking crops. Due to this lifestyle, many people suffer from chronic injuries. Health care is available, but supplies are extremely limited and expensive. For example, Constanza Hospital doesn't have any functional incubators. They don't even have oxygen monitors to assess patients after surgeries. In addition, most people do not have running water and the water they drink is contaminated. Many children are suffering from water-borne illnesses such as parasites on a chronic basis. The people of Constanza are in dire need of medical and dental services.</p>
+        <h3>Relevant Statistics</h3>
+
+        <table>
+            <tbody>
+                <tr>
+                    <th>Statistic</th>
+                    <th>Dominican Republic</th>
+                    <th>Caribbean</th>
+                    <th>USA</th>
+                </tr>
+                <tr>
+                    <td>Maternality Mortality (per 100,000 births)</td>
+                    <td>150</td>
+                    <td>63</td>
+                    <td>21</td>
+                </tr>
+                <tr>
+                    <td>Under 5 Mortality Rate (per 1000 live births)</td>
+                    <td>25</td>
+                    <td>16</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>Tuberculosis Incidence (per 100,000 people)</td>
+                    <td>83</td>
+                    <td>35</td>
+                    <td>3.4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+{% endblock %}

@@ -21,6 +21,43 @@ $info-width: 350px;
         top: 0;
         height: inherit;
 
+        .info {
+            @include border-box;
+            float: right;
+            width: $info-width;
+            padding: 20px 25px 0;
+            background-color: #EEE;
+            height: inherit;
+            text-align: left;
+            
+            h3 {
+                font-family: $caps-font, sans-serif;
+                text-transform: uppercase;
+                color: inherit;
+                font-size: 50px;
+                margin: 0;
+                text-align: inherit;
+            }
+
+            p {
+                font-size: 24px;
+                margin: 10px 0;
+            }
+
+            .buttons {
+                @include border-box;
+                margin-top: 35px;
+                
+                .button {
+                    margin-right: 25px; 
+
+                    &:last-child {
+                        margin-right: 0; 
+                    }
+                }
+            }
+        }
+
         &.active {
             display: block;
         }
@@ -35,54 +72,44 @@ $info-width: 350px;
             background-position: center center;
         }
 
-        .slide-img.person1, .slide-img.person3 {
-            background-image: url(../images/people/1.jpg);
-        }
-
-        .slide-img.person2, .slide-img.person4 {
-            background-image: url(../images/people/2.jpg);
-        }
-
-        .info {
-            @include border-box;
-            float: right;
-            width: $info-width;
-            padding: 20px 25px 0;
-            background-color: #EEE;
-            height: inherit;
-            
-            h3 {
-                font-family: $caps-font, sans-serif;
-                text-transform: uppercase;
-                color: inherit;
-                font-size: 50px;
-                margin: 0;
-                text-align: right;
+        &.person1 {
+            .slide-img.person1 {
+                background-image: url(../images/people/1.jpg);
             }
-
-            p {
-                font-size: 24px;
-                margin: 10px 0;
-                text-align: right;
-            }
-
-            .buttons {
-                @include border-box;
-                margin-top: 35px;
-                padding-left: 35px;
-                
-
-                .button {
-                    &:first-child {
-                        float: left
-                    }
-
-                    &:nth-child(2) {
-                        float: right; 
-                    }
+            .info {
+                li {
+                    font-size: 20px;    
+                }
+                .buttons .button {
+                    float: right;
+                    margin-right:10px;
                 }
             }
         }
+
+        &.person2 {
+            .slide-img {
+                background-image: url(../images/people/2.jpg);
+                background-position-y: 4%;
+            }
+        }
+        
+        &.person3 {
+            .slide-img {
+                background-image: url(../images/people/3.jpg);
+                background-position-y: 4%;
+            }
+            .info {
+                h3 {
+                    font-size: 40px;
+                }
+                em {
+                    text-align: right;
+                    padding-right: 10px;
+                }
+            }
+        }
+
     }
 }
 
@@ -95,7 +122,7 @@ $info-width: 350px;
         .slidethumb {
             @include border-box;
             padding: 10px 35px 6px;
-            width: 25%;
+            width: 33%;
             float: left;
 
             &:last-child {
@@ -110,6 +137,7 @@ $info-width: 350px;
                     display: inline-block;
                     padding: 3px;
                     border-radius: 5px;
+                    overflow: hidden;
 
                     &:hover, &.active {
                         background-color: $btn-inset;

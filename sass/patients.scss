@@ -1,0 +1,50 @@
+@import "variables";
+
+.title {
+    @include photo_header("patients.jpg");
+    background-position-y: 26%;
+}
+
+#content {
+    font-size: 18px;
+    line-height: 1.2em;
+    padding-top: 0;
+
+    ul {
+        margin-left: 50px;
+    }
+}
+
+h2 {
+    width: 235px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    font-size: 40px;
+    @include shadowline;
+}
+
+p {
+    margin: 15px 45px;
+}
+
+h3 {
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 31px;
+}
+
+table {
+    margin: 0px auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+
+    td, th {
+        max-width: 200px;
+        padding: 10px;
+        border: 1px solid black;
+        text-align: center;
+    }
+    td:first-child {
+        text-align: left;
+    }
+}

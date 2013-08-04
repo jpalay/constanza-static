@@ -18,7 +18,7 @@ $(function() {
     }).mouseleave(function() {
         hovering_over_slides = false;
     });
-    var interval = setInterval(auto_change_slide, 4000);
+    var interval = setInterval(auto_change_slide, 6000);
 });
 
 function go_to_slide(num) {
@@ -38,7 +38,7 @@ function go_to_slide(num) {
 
 function increment_slide() {
     var n = $('#slide-thumbs .slidethumb a.active').parent().parent().attr('data-person');
-    go_to_slide((n % 4) + 1);
+    go_to_slide((n % 3) + 1);
 }
 
 function auto_change_slide() {

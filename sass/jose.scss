@@ -1,0 +1,28 @@
+@import "variables";
+
+.title {
+    @include photo_header("jose.jpg");
+    background-position-y: 24%;
+}
+
+#content {
+    font-size: 18px;
+    line-height: 1.2em;
+    padding-top: 0;
+
+    ul {
+        margin-left: 50px;
+    }
+}
+
+h2 {
+    width: 235px;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    font-size: 40px;
+    @include shadowline;
+}
+
+p {
+    margin: 15px 45px;
+}

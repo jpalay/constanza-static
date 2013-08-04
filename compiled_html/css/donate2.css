@@ -1,0 +1,58 @@
+#content {
+  padding: 0;
+  margin-bottom: 40px; }
+
+.main-donation {
+  box-shadow: 0 5px 3px -2px #DDD;
+  padding-bottom: 12px; }
+  .main-donation .title {
+    position: relative;
+    background-image: url("../images/covers/donate.jpg");
+    background-size: cover;
+    height: 300px;
+    background-position-y: 40%; }
+    .main-donation .title h1 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 15px;
+      margin: 0;
+      font-size: 55px;
+      line-height: 55px;
+      color: #FFF;
+      text-shadow: 1px 1px 1px #000; }
+  .main-donation p {
+    margin: 0;
+    padding: 20px 50px;
+    font-size: 20px;
+    text-align: center; }
+  .main-donation .donate-box h2 {
+    font-size: 35px;
+    margin: 20px 0 0; }
+
+.donation-story {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 50%;
+  padding: 10px; }
+  .donation-story h3 {
+    font-size: 30px; }
+  .donation-story > img {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 30%; }
+  .donation-story p {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: left;
+    width: 70%;
+    padding: 0px 30px 30px;
+    margin: 0;
+    font-size: 20px; }
+  .donation-story .paypal-wrapper {
+    margin-top: -10px; }

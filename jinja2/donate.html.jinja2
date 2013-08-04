@@ -1,8 +1,46 @@
 {% extends "jinja2/_base.html.jinja2" %}
-<div id="content">
-    <div class="main-donation">
-        <h1>Donate to Constanza Medical Mission</h1>
-    </div>
-    <div class="donation-story"></div>
-    <div class="donation-story"></div>
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="css/donate.css">
+{% endblock %}
+{% block js %}
+    {{ super() }}
+    <script type="text/javascript" src="js/paypal.js"></script>
+{% endblock %}
+{% block content %}
+<div id="content" class="clearfix">
+    {% set title="Donate to Constanza Medical Mission" %}
+    {% include "jinja2/_cover_title.html.jinja2" %}
+    <p class="info">The Constanza Medical Mission cannot perform our work in Constanza without your help. Every year, we spend thousands of dollars providing essential medical and dental care. Your donations support:</p>
+    <ol>
+        <li>
+            Twice-yearly mission trips
+            <p>Each 1-week mission costs over $20,000, during which we provide medical treatment for a thousand patients.</p>
+        </li>
+        <li>
+            Medical supplies for local medical professionals
+            <p>The CMM supports local doctors and hospitals by providing equipment, medicine, and more. These supplies are sent in 50 foot shipping containers at a cost of $6,000 each.</p>
+        </li>
+        <li>
+            Medical treatments in the country's capital
+            <p>Some patients have injuries or illnesses that the Constanza medical system cannot handle. For these patients, we pay for transportation and medical procedures in the capital, Santo Domingo. If you'd like to meet one of our "special patients", <a href="jose.html">click here</a> to learn more about Jos&eacute; Miguel.</p>
+        </li>
+        <li>
+            Year-round medical staff in Constanza
+            <p>Dr. Saif is a physician, funded by the Constanza Medical Mission, who lives in Constanza and provides primary care to the local community.</p>
+        </li>
+    </ol>
+    <p class="info">What your donations provides:</p>
+
+    <ul>
+        <li><span class="amt">$25:</span> one woman will receive a supply of pre-natal vitamins</li>
+        <li><span class="amt">$50:</span> one family will receive a water filter</li>
+        <li><span class="amt">$200:</span> one patient will take a trip to the capital and see a specialist</li>
+        <li><span class="amt">$600:</span> one disabled patient will receive leg braces</li>
+        <li><span class="amt">$2000:</span> one disabled family will</li> 
+        <li><span class="amt">$20,000:</span> sponsors a mission</li>
+    </ul>
+    <p class="info">Please make a donation today.  Your tax-deductible contribution will change lives.</p>
+    {% include "jinja2/_paypal_box.html.jinja2" %}
 </div>
+{% endblock %}

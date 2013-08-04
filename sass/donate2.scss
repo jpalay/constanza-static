@@ -1,0 +1,59 @@
+@import "variables";
+
+#content {
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.main-donation {
+    @include shadowline;
+    padding-bottom: 12px;
+    .title {
+        @include photo_header("donate.jpg");
+        background-position-y: 40%;
+    }
+
+    p {
+        margin: 0;
+        padding: 20px 50px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .donate-box {
+        h2 {
+            font-size: 35px;
+            margin: 20px 0 0;
+        }
+    }
+}
+
+.donation-story {
+    @include border-box;
+    float: left;
+    width: 50%; 
+    padding: 10px;
+
+    h3 {
+        font-size: 30px;
+    }
+
+    > img {
+        @include border-box;
+        float: left;
+        width: 30%;
+    }
+
+    p {
+        @include border-box;
+        float: left;
+        width: 70%;
+        padding: 0px 30px 30px;
+        margin: 0;
+        font-size: 20px;
+    }
+    
+    .paypal-wrapper {
+        margin-top: -10px;
+    }
+}

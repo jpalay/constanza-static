@@ -11,7 +11,7 @@ $alt-btn-color: #9EAF6C;
 $alt-btn-shadow: #88965C;
 $alt-btn-inset: #B8C493;
 
-$caps-font: BenchNine;
+$caps-font: BenchNine, sans-serif;
 
 @mixin border-box {
     -webkit-box-sizing: border-box;
@@ -24,4 +24,33 @@ $caps-font: BenchNine;
 }
 @mixin shadowline() {
     box-shadow: 0 5px 3px -2px #DDD;
+}
+@mixin photo_header($header_src) {
+    position: relative;
+    background-image: url("../images/covers/"+$header_src);
+    background-size: cover;
+    height: 300px;
+
+    h1 {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 15px;
+        margin: 0;
+        font-size: 55px;
+        line-height: 55px;
+        color: #FFF;
+        text-shadow: 1px 1px 1px #000;
+    }
+}
+@mixin bold_list() {
+    margin: 16px 100px;
+    li {
+        font-size: 18px;
+        font-weight: bold;
+
+        p {
+            font-weight: normal;
+        }
+    }
 }

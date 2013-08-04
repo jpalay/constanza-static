@@ -25,12 +25,8 @@
 
 body {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: Georgia, serif;
     color: #333;
-}
-
-p {
-    font-family: Georgia, sans-serif;
 }
 
 a {
@@ -55,6 +51,7 @@ hr {
 
 #content {
     @include side-shadows();
+    @include border-box();
     max-width: $max-page-width;
     min-width: $min-page-width;
     margin: 0 auto; 
@@ -85,6 +82,50 @@ a.button {
         }
     }
 }
+
+.paypal-box-wrapper {
+    text-align: center;
+    .paypal-box {
+        display: inline-block;
+        padding: 6px 0 6px 13px;
+        border-radius: 5px;
+        font-size: 20px;
+        box-shadow: inset 0px 0px 3px #999;
+        color: $light-grey;
+
+        &.active {
+            box-shadow: inset 0px 0px 4px #222;
+            color: #333;
+        }
+
+        input[type="text"] {
+            border: none;
+            font-size: inherit;
+            font-family: Georgia, serif;
+            height: 30px;
+        }
+
+        input[type="text"]:focus {
+            outline: none;
+        }
+    }
+
+    .submit {
+        .via {
+            display: block;
+            font-family: $caps-font;
+            font-size: 21px;
+            line-height: 15px;
+            color: $dark-grey;
+            text-transform: uppercase;
+        }
+        display: inline-block;
+        padding: 10px;
+        position: relative;
+        top: 23px;
+    }
+}
+
 
 // Nicolas Gallagher's Clearfix
 // nicolasgallagher.com/micro-clearfix-hack/

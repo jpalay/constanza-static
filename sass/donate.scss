@@ -1,0 +1,31 @@
+@import "variables";
+
+#content {
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.title {
+    @include photo_header("donate.jpg");
+    background-position-y: 40%;
+}
+
+p.info {
+    font-size: 18px;
+    margin: 16px 100px;
+}
+
+ol {
+    @include bold_list();
+}
+
+ul {
+    @extend ol;
+    li { 
+        font-weight: normal;
+
+        .amt {
+            font-weight: bold;
+        }
+    }
+}

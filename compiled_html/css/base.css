@@ -18,11 +18,8 @@
 
 body {
   margin: 0;
-  font-family: 'Lato', sans-serif;
+  font-family: Georgia, serif;
   color: #333; }
-
-p {
-  font-family: Georgia, sans-serif; }
 
 a {
   color: #333;
@@ -30,7 +27,7 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   color: #333;
-  font-family: BenchNine, sans-serif;
+  font-family: BenchNine, sans-serif, sans-serif;
   text-transform: uppercase;
   text-align: center; }
 
@@ -43,6 +40,9 @@ hr {
 
 #content {
   box-shadow: 3px 0 3px -2px #DDD, -3px 0 3px -2px #DDD;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   max-width: 1200px;
   min-width: 960px;
   margin: 0 auto;
@@ -65,6 +65,38 @@ a.button {
     box-shadow: 1px 1px 3px #88965c, inset 0px 0px 3px #b8c493; }
     a.button.alt:hover {
       background-color: #b8c493; }
+
+.paypal-box-wrapper {
+  text-align: center; }
+  .paypal-box-wrapper .paypal-box {
+    display: inline-block;
+    padding: 6px 0 6px 13px;
+    border-radius: 5px;
+    font-size: 20px;
+    box-shadow: inset 0px 0px 3px #999;
+    color: #63665e; }
+    .paypal-box-wrapper .paypal-box.active {
+      box-shadow: inset 0px 0px 4px #222;
+      color: #333; }
+    .paypal-box-wrapper .paypal-box input[type="text"] {
+      border: none;
+      font-size: inherit;
+      font-family: Georgia, serif;
+      height: 30px; }
+    .paypal-box-wrapper .paypal-box input[type="text"]:focus {
+      outline: none; }
+  .paypal-box-wrapper .submit {
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    top: 23px; }
+    .paypal-box-wrapper .submit .via {
+      display: block;
+      font-family: BenchNine, sans-serif;
+      font-size: 21px;
+      line-height: 15px;
+      color: #42453d;
+      text-transform: uppercase; }
 
 .clearfix:before,
 .clearfix:after {
@@ -90,6 +122,7 @@ a.button {
     width: 960px;
     margin: 0 auto; }
   #main-nav .brand {
+    font-family: 'Lato', sans-serif;
     color: #e6e7e7;
     float: left;
     font-size: 22px;
@@ -105,7 +138,7 @@ a.button {
       float: left;
       color: #e6e7e7;
       position: relative;
-      font-family: BenchNine;
+      font-family: BenchNine, sans-serif;
       font-weight: bold;
       text-transform: uppercase;
       font-size: 21px; }

@@ -1,0 +1,22 @@
+PAGES
+ - What's Next
+ - Help From Home
+ - Videos
+ - Contact
+
+TWEAKS
+ - Join us: add more images
+ - José: add more images
+ - Our Patients: add in that one graph
+ - Future: replace cover photo
+
+TECHNICAL
+ - Make PayPal Work
+ - Restyle PayPal button
+ - DNS
+ - Our Patients: turn table into bar graph
+
+CONTENT
+ - More videos?
+ - Get actual photos for gallery
+ - Contact info

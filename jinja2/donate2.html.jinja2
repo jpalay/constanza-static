@@ -1,0 +1,52 @@
+{% extends "jinja2/_base.html.jinja2" %}
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="css/donate2.css">
+{% endblock %}
+{% block js %}
+    {{ super() }}
+    <script type="text/javascript" src="js/paypal.js"></script>
+{% endblock %}
+{% block content %}
+<div id="content" class="clearfix">
+    <div class="main-donation">
+        {% set title="Donate to Constanza Medical Mission" %}
+        {% include "jinja2/_cover_title.html.jinja2" %}
+        <p>Here is where we talk about donations, and why donations are so important to what we do here at Constanza Medical Mission.  We should say some reasons why we need money or something like that, and then we can do really awesome things with the money people give us.  So yeah, we should say all of this and then people will give us money!</p>
+        <div class="donate-box">
+            <h2>Donate Now</h2>
+            <div class="paypal-box-wrapper">
+                <div class="paypal-box">
+                    <span class="currency">$</span>
+                    <input type="text" name="amt" value="25.00">
+                </div>
+                <a href="#" class="submit"><span class="via">Donate Via</span><img src="images/donate/paypal.gif"></a>
+            </div>
+        </div>
+    </div>
+    <div class="donation-story clearfix">
+        <h3>Give to Jos&eacute; Miguel</h3>
+        <img src="http://lorempixel.com/300/300">
+        <p>Mauris eu sapien sapien. Aenean et enim a mi sodales aliquam. Nullam sit amet condimentum nibh. Etiam ut mi hendrerit, semper dolor sit amet, tristique nulla. Morbi convallis libero ut leo volutpat, id pretium velit laoreet.</p>
+        <div class="paypal-box-wrapper">
+            <div class="paypal-box">
+                <span class="currency">$</span>
+                <input type="text" name="amt" value="25.00">
+            </div>
+            <a href="#" class="submit"><span class="via">Donate Via</span><img src="images/donate/paypal.gif"></a>
+        </div>
+    </div>
+    <div class="donation-story clearfix">
+        <h3>Give to Jos&eacute; Miguel</h3>
+        <img src="http://lorempixel.com/300/300">
+        <p>Mauris eu sapien sapien. Aenean et enim a mi sodales aliquam. Nullam sit amet condimentum nibh. Etiam ut mi hendrerit, semper dolor sit amet, tristique nulla. Morbi convallis libero ut leo volutpat, id pretium velit laoreet.</p>
+        <div class="paypal-box-wrapper">
+            <div class="paypal-box">
+                <span class="currency">$</span>
+                <input type="text" name="amt" value="25.00">
+            </div>
+            <a href="#" class="submit"><span class="via">Donate Via</span><img src="images/donate/paypal.gif"></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "jinja2/_base.html.jinja2" %}
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="css/jose.css">
+{% endblock %}
+{% block js %}
+    {{ super() }}
+    <script type="text/javascript" src="js/paypal.js"></script>
+{% endblock %}
+{% block content %}
+    <div id="content">
+        {% set title="Meet Jos&eacute; Miguel" %}
+        {% include "jinja2/_cover_title.html.jinja2" %}
+        <p>Jos&eacute; Miguel was born with arthrogryposis multiplex congenita, a rare disease that leads to multiple joint contractures and weakness. His hands, arms, shoulders, feet, and and legs have all been affected. Despite these challenges, he walks to school every day and has learned how to write and use a computer. His illness requires many interventions.</p>
+        <p>Jos&eacute; Miguel needs braces for both of his legs, so that he can walk more effectively and without pain. The braces cannot be produced in Constanza, so he needs to travel to the capital, a 6 hour round trip, every time they need to be adjusted. Jos&eacute; also needs vocational training and may eventually require hand orthotics.</p>
+        <p>Jos&eacute; Miguel's house is in dire need of repairs. There are no stairs to his house, just a concrete ramp that is extremely slippery when it rains. He also needs to climb a rocky path every time he needs to use the bathroom. On our next trip to Constanza, we are going to build stairs to replace these dangerous routes. We need money to pay for supplies and workers.</p> 
+        <p>The total cost of all of these interventions is $3000. As of today, we have raised $50 dollars. If you'd like to help Jos&eacute; Miguel, please click on this button. 100% of your donation will be directed to helping Jos&eacute;.</p>
+    </div>
+{% endblock %}

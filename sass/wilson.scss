@@ -1,0 +1,38 @@
+@import "variables";
+
+.title {
+    @include photo_header("wilson.jpg");
+    background-position-y: 39%;
+}
+
+#content {
+    font-size: 18px;
+    line-height: 1.2em;
+    padding-top: 0;
+
+    ul {
+        margin-left: 50px;
+    }
+}
+
+.story {
+    margin: 20px;
+    img.before {
+        width: 30%;
+        float: left;
+    }
+    img.after {
+        @extend img.before;
+    }
+    p {
+        @include border-box();
+        width: 40%;
+        float: left;
+        margin: 0;
+        padding: 15px 45px;
+    }
+}
+
+p {
+    margin: 15px 45px;
+}
