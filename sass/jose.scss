@@ -2,16 +2,74 @@
 
 .title {
     @include photo_header("jose.jpg");
-    background-position-y: 24%;
+    background-position-y: 0%;
 }
 
 #content {
     font-size: 18px;
     line-height: 1.2em;
     padding-top: 0;
+    #text {
+        padding: 0 45px inherit;
 
-    ul {
-        margin-left: 50px;
+        #foot {
+            width: 30%;
+            clear: right;
+        }
+
+        #body {
+            width: 30%;
+        }
+
+        #friends {
+            width: 59%;
+        }
+
+        .inline {
+            float: none;
+            width: 29%;
+            display: inline-block;
+        }
+
+        .image-wrapper {
+            float: none;
+            margin: 0 auto;
+        }
+
+        .img-row {
+            margin: 0 45px;
+            .image-wrapper:first-child {
+                float: none;
+                display: inline-block;
+                width: 44%;
+                margin: 0 10% 0 0;
+            }
+
+            .image-wrapper:nth-child(2) {
+                float: none;
+                display: inline-block;
+                width: 44%;
+                margin: 0;
+            }
+        }
+
+
+        #family {
+            float: none;
+            margin: 0 auto;
+        }
+
+        // #ramp {
+        //     float: left;
+        //     clear: left;
+        //     width: 30%;
+        // }
+
+        // #path {
+        //     float: left;
+        //     width: 300px;
+        //     margin-right: 15px;
+        // }
     }
 }
 
@@ -23,6 +81,6 @@ h2 {
     @include shadowline;
 }
 
-p {
-    margin: 15px 45px;
+.paypal-box-wrapper {
+    margin-bottom: 30px;
 }

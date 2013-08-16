@@ -1,0 +1,3 @@
+1. Who We Are: need a new picture for the top slot of 
+2. Our Patients: Looks like graph came directly from WHO publication.  Have copyright concerns.
+2. Our Future: Images break up text, but look kinda awkward.  Suggestion: Create sidebar, put images (with captions) in the sidebar. When images are clicked, use Lightbox to expand images (like in photo gallery)

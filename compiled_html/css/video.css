@@ -1,0 +1,16 @@
+#content h1 {
+  box-shadow: 0 5px 3px -2px #DDD;
+  margin: 0 auto;
+  width: 230px;
+  font-size: 45px; }
+#content .video {
+  width: 50%;
+  margin: 0 auto; }
+  #content .video .video-inner {
+    width: 560px;
+    margin: 0 auto; }
+    #content .video .video-inner h3 {
+      font-size: 30px; }
+
+p {
+  margin: 15px 0px; }

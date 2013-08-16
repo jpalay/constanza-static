@@ -1,0 +1,17 @@
+{% extends "jinja2/_base.html.jinja2" %}
+{% block css %}
+    {{ super() }}
+    <link rel="stylesheet" type="text/css" href="css/video.css">
+{% endblock %}
+{% block content %}
+    <div id="content">
+        <h1>Videos</h1>
+        <div class="video">
+            <div class="video-inner">
+                <h3>Documentary</h3>
+                <iframe width="560" height="315" src="http://www.youtube.com/embed/U8WSiN2NHNY" frameborder="0" allowfullscreen></iframe>
+                <p>This incredible documentary was shot, free of charge, by volunteers in 2010. We hope you enjoy it.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

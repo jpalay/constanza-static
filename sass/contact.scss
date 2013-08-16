@@ -1,0 +1,17 @@
+@import "variables";
+
+#content {
+    padding: 20px;
+    margin-bottom:20px;
+}
+
+h1 {
+    @include shadowline;
+    margin: 0 auto;
+    width: 230px;
+    font-size: 45px;
+} 
+
+.address {
+    margin: 2px 0 2px 30px;
+}

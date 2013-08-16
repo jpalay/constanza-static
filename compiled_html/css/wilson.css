@@ -24,10 +24,11 @@
 
 .story {
   margin: 20px; }
-  .story img.before, .story img.after {
+  .story .image-wrapper.before, .story .image-wrapper.after {
+    float: left;
     width: 30%;
-    float: left; }
-  .story p {
+    margin: 0; }
+  .story > p {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

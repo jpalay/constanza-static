@@ -2,7 +2,7 @@
 
 .title {
     @include photo_header("about.jpg");
-    background-position-y: 41%;
+    background-position-y: 32%;
 }
 
 #content {
@@ -13,14 +13,11 @@
     ul {
         margin-left: 50px;
     }
-}
 
-h2 {
-    width: 235px;
-    margin: 0 auto;
-    padding-bottom: 15px;
-    font-size: 40px;
-    @include shadowline;
+    .image-wrapper {
+        float: none;
+        margin: 0 auto;
+    }
 }
 
 p {

@@ -1,0 +1,12 @@
+#content {
+  padding: 20px;
+  margin-bottom: 20px; }
+
+h1 {
+  box-shadow: 0 5px 3px -2px #DDD;
+  margin: 0 auto;
+  width: 230px;
+  font-size: 45px; }
+
+.address {
+  margin: 2px 0 2px 30px; }

@@ -29,8 +29,8 @@ body {
     color: #333;
 }
 
-a {
-    color: #333;
+a.stealth {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -57,6 +57,27 @@ hr {
     margin: 0 auto; 
     padding: 25px 0 25px 0;
     font-family: Georgia, serif;
+}
+
+.image-wrapper {
+    @include border-box();
+    float: right;
+    width: 50%;
+    margin: 15px;
+    padding: 5px;
+    border: 1px solid #e3e3e3;
+    box-shadow: 1px 2px 2px #eee;
+    
+    img {
+        width: 100%
+    }
+
+    p {
+        margin: 3px;
+        color: #666;
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+    }
 }
 
 a.button {
@@ -127,21 +148,14 @@ a.button {
 }
 
 
-// Nicolas Gallagher's Clearfix
-// nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
+// Clearfix from http://css-tricks.com/snippets/css/clear-fix/
 .clearfix:after {
-    content: " "; 
-    display: table; 
-}
-
-.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
     clear: both;
-}
-
-/**
- * For IE 6/7 only
- */
-.clearfix {
-    *zoom: 1;
-}
+    height: 0;
+    }
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */

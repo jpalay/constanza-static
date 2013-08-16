@@ -5,12 +5,18 @@
 {% endblock %}
 {% block content %}
     <div id="content">
-        {% set title="Meet Wilson Lastname" %}
+        {% set title="Meet Wilson Alberto" %}
         {% include "jinja2/_cover_title.html.jinja2" %}
         <div class="story clearfix">
-            <img class="before" src="images/stories/wilson_before.jpg">
-            <p>When we met Wilson, he was struggling with major birth defects. He couldn,t eat enough to grow at a normal rate. His family was terrified that he would never have a normal life. The CMM located an American surgeon who travels to the Dominican Republic and, in conjunction with local Peace Corps volunteers, brought Wilson to the capital for several surgical procedures. Thanks to the dedicated efforts of MACLA surgeons, this is Wilson today. He's healthy, attending school, and growing well.</p>
-            <img class="after" src="images/stories/wilson_after.jpg">
+            <div class="image-wrapper before">
+                <img src="images/stories/wilson_before.jpg">
+                <p>Wilson 2010</p>
+            </div>
+            <p>When we met Wilson, he was struggling with major birth defects. He couldn't eat enough to grow at a normal rate. His family was terrified that he would never have a normal life. The CMM located an American surgeon who travels to the Dominican Republic and, in conjunction with local Peace Corps volunteers, brought Wilson to the capital for several surgical procedures. Thanks to the dedicated efforts of MACLA surgeons, this is Wilson today. He's healthy, attending school, and growing well.</p>
+            <div class="image-wrapper after">
+                <img src="images/stories/wilson_after.jpg">
+                <p>Wilson 2013</p>
+            </div>
         </div>
     </div>
 {% endblock %}

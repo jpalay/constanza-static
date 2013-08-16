@@ -17,14 +17,15 @@
 
 .story {
     margin: 20px;
-    img.before {
-        width: 30%;
+    .image-wrapper.before {
         float: left;
+        width: 30%;
+        margin: 0;
     }
-    img.after {
-        @extend img.before;
+    .image-wrapper.after {
+        @extend .image-wrapper.before;
     }
-    p {
+    > p {
         @include border-box();
         width: 40%;
         float: left;

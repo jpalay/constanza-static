@@ -3,7 +3,7 @@
   background-image: url("../images/covers/future.jpg");
   background-size: cover;
   height: 300px;
-  background-position-y: 30%; }
+  background-position-y: 14%; }
   .title h1 {
     position: absolute;
     left: 0;
@@ -19,13 +19,25 @@
   font-size: 18px;
   line-height: 1.2em;
   padding-top: 0; }
-  #content ul {
-    margin-left: 50px; }
-
-ol {
-  margin: 16px 100px; }
-  ol li {
-    font-size: 18px;
-    font-weight: bold; }
-    ol li p {
-      font-weight: normal; }
+  #content > p {
+    margin: 16px 100px; }
+  #content ol {
+    margin: 16px 100px; }
+    #content ol li {
+      font-size: 18px;
+      font-weight: bold; }
+      #content ol li p {
+        font-weight: normal; }
+    #content ol li p {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+    #content ol li > img {
+      display: block;
+      width: 50%;
+      margin: 18px auto; }
+    #content ol li .image-wrapper {
+      float: none;
+      margin: 10px auto; }
+      #content ol li .image-wrapper#dentist {
+        width: 70%; }

@@ -15,6 +15,10 @@
     color: #FFF;
     text-shadow: 1px 1px 1px #000; }
 
+.title h1 {
+  color: white;
+  text-shadow: -2px -2px 0 #000,   2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000; }
+
 h2 {
   width: 450px; }
 
@@ -34,3 +38,25 @@ h2 {
 
 p {
   margin: 15px 45px; }
+
+#drs {
+  float: none;
+  margin: 0 auto;
+  width: 25%; }
+
+.img-row {
+  margin: 0 45px; }
+  .img-row #line {
+    float: none;
+    display: inline-block;
+    width: 44%;
+    margin: 0 10% 0 0; }
+  .img-row #clinic {
+    float: none;
+    display: inline-block;
+    width: 44%;
+    margin: 0; }
+
+#party {
+  float: none;
+  margin: 0 auto; }

@@ -1,22 +1,18 @@
 PAGES
- - What's Next
- - Help From Home
- - Videos
  - Contact
-
-TWEAKS
- - Join us: add more images
- - José: add more images
- - Our Patients: add in that one graph
- - Future: replace cover photo
 
 TECHNICAL
  - Make PayPal Work
  - Restyle PayPal button
- - DNS
  - Our Patients: turn table into bar graph
 
-CONTENT
+NEED FROM GREG
  - More videos?
  - Get actual photos for gallery
  - Contact info
+ - Separate photos for join us
+ - Better graph for immunization coverage
+ - Wilson's last name
+ - DNS info
+ - Better cover photo for Our Future
+ - Better cover photo for videos

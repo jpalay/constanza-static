@@ -2,19 +2,38 @@
 
 .title {
     @include photo_header("future.jpg");
-    background-position-y: 30%;
+    background-position-y: 14%;
 }
 
 #content {
     font-size: 18px;
     line-height: 1.2em;
     padding-top: 0;
-
-    ul {
-        margin-left: 50px;
+    
+    > p {
+        margin: 16px 100px; 
     }
-}
+    ol {
+        @include bold_list();
+        li {
+            p {
+                @include border_box();
+            }
 
-ol {
-    @include bold_list();
+            > img {
+                display: block;
+                width: 50%;
+                margin: 18px auto;
+            }
+
+            .image-wrapper {
+                float: none;
+                margin: 10px auto;
+
+                &#dentist {
+                    width: 70%;
+                }
+            }
+        }
+    }
 }

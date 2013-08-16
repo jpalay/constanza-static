@@ -27,24 +27,34 @@ p {
     margin: 15px 45px;
 }
 
-h3 {
+#stats {
     text-align: center;
-    padding: 10px 40px;
-    font-size: 31px;
-}
 
-table {
-    margin: 0px auto;
-    border: 1px solid black;
-    border-collapse: collapse;
-
-    td, th {
-        max-width: 200px;
-        padding: 10px;
-        border: 1px solid black;
+    h3 {
         text-align: center;
+        padding: 10px 40px;
+        font-size: 31px;
     }
-    td:first-child {
-        text-align: left;
+
+    table {
+        margin: 0 0 30px;
+        border: 1px solid black;
+        border-collapse: collapse;
+        display: inline-block;
+
+        td, th {
+            max-width: 200px;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: center;
+        }
+        td:first-child {
+            text-align: left;
+        }
+    }
+
+    #immunization {
+        display: block;
+        margin: 0 auto;
     }
 }

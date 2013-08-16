@@ -39,11 +39,12 @@
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
-        margin-top: 35px; }
+        position: absolute;
+        bottom: 30px;
+        right: 30px; }
         #slides .slide-item .info .buttons .button {
-          margin-right: 25px; }
-          #slides .slide-item .info .buttons .button:last-child {
-            margin-right: 0; }
+          float: right;
+          margin-right: 10px; }
     #slides .slide-item.active {
       display: block; }
     #slides .slide-item .slide-img {
@@ -58,9 +59,6 @@
       background-image: url(../images/people/1.jpg); }
     #slides .slide-item.person1 .info li {
       font-size: 20px; }
-    #slides .slide-item.person1 .info .buttons .button {
-      float: right;
-      margin-right: 10px; }
     #slides .slide-item.person2 .slide-img {
       background-image: url(../images/people/2.jpg);
       background-position-y: 4%; }

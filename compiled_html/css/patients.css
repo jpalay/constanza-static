@@ -32,19 +32,24 @@ h2 {
 p {
   margin: 15px 45px; }
 
-h3 {
-  text-align: center;
-  padding: 10px 40px;
-  font-size: 31px; }
-
-table {
-  margin: 0px auto;
-  border: 1px solid black;
-  border-collapse: collapse; }
-  table td, table th {
-    max-width: 200px;
-    padding: 10px;
+#stats {
+  text-align: center; }
+  #stats h3 {
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 31px; }
+  #stats table {
+    margin: 0 0 30px;
     border: 1px solid black;
-    text-align: center; }
-  table td:first-child {
-    text-align: left; }
+    border-collapse: collapse;
+    display: inline-block; }
+    #stats table td, #stats table th {
+      max-width: 200px;
+      padding: 10px;
+      border: 1px solid black;
+      text-align: center; }
+    #stats table td:first-child {
+      text-align: left; }
+  #stats #immunization {
+    display: block;
+    margin: 0 auto; }
