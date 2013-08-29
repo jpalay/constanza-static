@@ -3,7 +3,7 @@
   background-image: url("../images/covers/patients.jpg");
   background-size: cover;
   height: 300px;
-  background-position-y: 26%; }
+  background-position: 0 26%; }
   .title h1 {
     position: absolute;
     left: 0;

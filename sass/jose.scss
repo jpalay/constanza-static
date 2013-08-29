@@ -2,7 +2,7 @@
 
 .title {
     @include photo_header("jose.jpg");
-    background-position-y: 0%;
+    background-position: 0 0%;
 }
 
 #content {

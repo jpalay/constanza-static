@@ -10,7 +10,7 @@
     padding-bottom: 12px;
     .title {
         @include photo_header("donate.jpg");
-        background-position-y: 40%;
+        background-position: 0 40%;
     }
 
     p {

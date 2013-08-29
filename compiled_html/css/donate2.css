@@ -10,7 +10,7 @@
     background-image: url("../images/covers/donate.jpg");
     background-size: cover;
     height: 300px;
-    background-position-y: 40%; }
+    background-position: 0 40%; }
     .main-donation .title h1 {
       position: absolute;
       left: 0;

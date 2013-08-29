@@ -3,7 +3,7 @@
   background-image: url("../images/covers/about.jpg");
   background-size: cover;
   height: 300px;
-  background-position-y: 32%; }
+  background-position: 0 32%; }
   .title h1 {
     position: absolute;
     left: 0;

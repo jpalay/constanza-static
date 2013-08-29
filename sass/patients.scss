@@ -2,7 +2,7 @@
 
 .title {
     @include photo_header("patients.jpg");
-    background-position-y: 26%;
+    background-position: 0 26%;
 }
 
 #content {

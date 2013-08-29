@@ -86,14 +86,14 @@ $info-width: 350px;
         &.person2 {
             .slide-img {
                 background-image: url(../images/people/2.jpg);
-                background-position-y: 4%;
+                background-position: 0 4%;
             }
         }
         
         &.person3 {
             .slide-img {
                 background-image: url(../images/people/3.jpg);
-                background-position-y: 4%;
+                background-position: 0 4%;
             }
             .info {
                 h3 {

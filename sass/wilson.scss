@@ -2,7 +2,7 @@
 
 .title {
     @include photo_header("wilson.jpg");
-    background-position-y: 39%;
+    background-position: 0 39%;
 }
 
 #content {

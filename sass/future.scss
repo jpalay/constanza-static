@@ -2,7 +2,7 @@
 
 .title {
     @include photo_header("future.jpg");
-    background-position-y: 14%;
+    background-position: 0 14%;
 }
 
 #content {

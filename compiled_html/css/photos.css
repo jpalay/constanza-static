@@ -61,10 +61,10 @@
       font-size: 20px; }
     #slides .slide-item.person2 .slide-img {
       background-image: url(../images/people/2.jpg);
-      background-position-y: 4%; }
+      background-position: 0 4%; }
     #slides .slide-item.person3 .slide-img {
       background-image: url(../images/people/3.jpg);
-      background-position-y: 4%; }
+      background-position: 0 4%; }
     #slides .slide-item.person3 .info h3 {
       font-size: 40px; }
     #slides .slide-item.person3 .info em {
