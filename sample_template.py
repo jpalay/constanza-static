@@ -1,4 +1,4 @@
-#!/Users/user/venvs/templating/bin/python
+#!/usr/bin/env python
 from jinja2 import FileSystemLoader, Template
 from jinja2.environment import Environment
 import os
